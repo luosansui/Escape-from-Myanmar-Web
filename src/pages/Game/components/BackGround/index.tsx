@@ -1,5 +1,6 @@
 import Animate from "./Animate";
 import useContent from "@/hooks/useConten";
+
 export const BackGround = ({ now }: { now: number }) => {
   const item = useContent(now)?.background;
   if (!item) return null;
@@ -18,6 +19,7 @@ export const BackGround = ({ now }: { now: number }) => {
           >
             <Animate type={item.animateType} now={now} />
           </div>
+          {/* 无限循环背景音 */}
         </div>
       ) : null}
     </>

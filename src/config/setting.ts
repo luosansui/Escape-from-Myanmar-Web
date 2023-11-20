@@ -1,6 +1,5 @@
 import Image_BG_1 from "@/assets/images/background/bg_1.png";
 import Image_BG_2 from "@/assets/images/background/bg_2.png";
-import Image_BG_3 from "@/assets/images/background/bg_3.png";
 import Imaage_Wardrobe from "@/assets/images/background/wardrobe.png";
 export const TIMELINE_CONTENT = [
   {
@@ -72,7 +71,7 @@ export const TIMELINE_CONTENT = [
     },
   },
   {
-    time: 5.5, // 门被打开，耗时0.5秒
+    time: 5.5, // 门被打开，耗时1秒
     content: {
       dialogBox: {
         speaker: "背景音",
@@ -86,7 +85,7 @@ export const TIMELINE_CONTENT = [
     },
   },
   {
-    time: 6, // 显示遮罩，耗时1秒
+    time: 6.5, // 显示遮罩，耗时1秒
     content: {
       dialogBox: {
         speaker: "背景音",
@@ -104,7 +103,7 @@ export const TIMELINE_CONTENT = [
     },
   },
   {
-    time: 7, // 保安出现，对话框消失，遮罩开始消失，耗时1秒
+    time: 7.5, // 保安出现，对话框消失，遮罩开始消失，耗时1秒
     content: {
       background: {
         bgImage: `url(${Image_BG_2})`,
@@ -118,7 +117,7 @@ export const TIMELINE_CONTENT = [
     },
   },
   {
-    time: 8, // 保安出现在门口，耗时0.3秒
+    time: 8.5, // 保安出现在门口，耗时0.3秒
     content: {
       background: {
         bgImage: `url(${Image_BG_2})`,
@@ -128,7 +127,7 @@ export const TIMELINE_CONTENT = [
     },
   },
   {
-    time: 8.3, // 保安在门口说话，耗时0.7秒
+    time: 8.7, // 保安在门口说话，耗时1.3秒
     content: {
       background: {
         bgImage: `url(${Image_BG_2})`,
@@ -142,7 +141,7 @@ export const TIMELINE_CONTENT = [
     },
   },
   {
-    time: 9, // 视角右移动，耗时1秒
+    time: 10, // 视角右移动，耗时1秒
     content: {
       background: {
         bgImage: `url(${Image_BG_2})`,
@@ -157,7 +156,7 @@ export const TIMELINE_CONTENT = [
     },
   },
   {
-    time: 10, // 视角暂停，耗时0.5秒
+    time: 11, // 视角暂停，耗时0.5秒
     content: {
       background: {
         bgImage: `url(${Image_BG_2})`,
@@ -171,7 +170,7 @@ export const TIMELINE_CONTENT = [
     },
   },
   {
-    time: 10.5, // 显示遮罩，准备切换我的视角，耗时0.3秒
+    time: 11.5, // 显示遮罩，准备切换我的视角，耗时0.5秒
     content: {
       background: {
         bgImage: `url(${Image_BG_2})`,
@@ -185,29 +184,15 @@ export const TIMELINE_CONTENT = [
     },
   },
   {
-    time: 10.8, // 变更背景图，耗时0.2秒
+    time: 12, // 切换我的视角，耗时2秒
     content: {
       background: {
-        bgImage: `url(${Image_BG_3})`,
-        xPos: 12,
-        duration: 0.2,
-        animateType: 1,
-      },
-      mask: {
-        bgColor: "rgba(0,0,0)",
-        duration: 0.2,
-      },
-    },
-  },
-  {
-    time: 11, // 切换我的视角，耗时2秒
-    content: {
-      background: {
-        bgImage: `url(${Image_BG_3})`,
+        bgImage: `url(${Image_BG_2})`,
         xPos: 12,
       },
       mask: {
         bgImage: `url(${Imaage_Wardrobe})`,
+        duration: 0.5,
       },
       dialogBox: {
         speaker: "我",
@@ -217,10 +202,10 @@ export const TIMELINE_CONTENT = [
     },
   },
   {
-    time: 13, // 显示黑色遮罩，耗时0.2秒
+    time: 13, // 显示黑色遮罩，耗时0.5秒
     content: {
       background: {
-        bgImage: `url(${Image_BG_3})`,
+        bgImage: `url(${Image_BG_2})`,
         xPos: 12,
       },
       mask: {
@@ -235,32 +220,17 @@ export const TIMELINE_CONTENT = [
     },
   },
   {
-    time: 13.2, // 切换背景图，准备切换原视角，耗时0.3秒
-    content: {
-      background: {
-        bgImage: `url(${Image_BG_2})`,
-        xPos: 12,
-      },
-      mask: {
-        duration: 0.3,
-        bgColor: "rgb(0,0,0)",
-      },
-      dialogBox: {
-        speaker: "我",
-        text: "......",
-        zIndex: 999999,
-      },
-    },
-  },
-  {
-    time: 13.5, // 切换回原视角，耗时0.5秒
+    time: 14.5, // 切换回原视角，耗时0.5秒
     content: {
       background: {
         bgImage: `url(${Image_BG_2})`,
         xPos: 12,
         animateType: 1,
       },
-
+      mask: {
+        bgColor: "rgb(0,0,0,0)",
+        duration: 0.2,
+      },
       dialogBox: {
         speaker: "保安",
         text: "不出来是吧？！",
@@ -268,7 +238,7 @@ export const TIMELINE_CONTENT = [
     },
   },
   {
-    time: 14, // 向左移动视角，耗时1秒
+    time: 15, // 向左移动视角，耗时1秒
     content: {
       background: {
         bgImage: `url(${Image_BG_2})`,
@@ -283,7 +253,7 @@ export const TIMELINE_CONTENT = [
     },
   },
   {
-    time: 15, // 暂停，耗时0.5秒
+    time: 16, // 暂停，耗时0.5秒
     content: {
       background: {
         bgImage: `url(${Image_BG_2})`,
@@ -297,41 +267,85 @@ export const TIMELINE_CONTENT = [
     },
   },
   {
-    time: 15.5, // 显示遮罩，准备切换我的视角，耗时0.2秒
+    time: 16.5, // 显示遮罩，准备切换我的视角，耗时0.5秒
     content: {
       background: {
         bgImage: `url(${Image_BG_2})`,
-        xPos: 0,
+        xPos: 12,
+        duration: 0.5,
         animateType: 1,
       },
       mask: {
         bgColor: "rgba(0,0,0)",
-        duration: 0.2,
+        duration: 0.5,
       },
     },
   },
   {
-    time: 15.7, // 切换我的视角，耗时0.3秒
+    time: 17, // 切换我的视角，耗时1秒
     content: {
       background: {
-        bgImage: `url(${Image_BG_3})`,
+        bgImage: `url(${Image_BG_2})`,
         xPos: 12,
       },
       mask: {
         bgImage: `url(${Imaage_Wardrobe})`,
+        duration: 0.5,
       },
     },
   },
   {
-    time: 16, // 开始心跳图，无限耗时
+    time: 18, // 显示说明文字，耗时3秒
     content: {
       background: {
-        bgImage: `url(${Image_BG_3})`,
+        bgImage: `url(${Image_BG_2})`,
+        xPos: 12,
+      },
+      mask: {
+        bgImage: `url(${Imaage_Wardrobe})`,
+        duration: 0.5,
+      },
+      dialogBox: {
+        speaker: "操作提示",
+        text: "在剧烈心跳时按下【空格】屏息避免因为呼吸声被发现，长时间屏息会导致死亡！！！",
+      },
+    },
+  },
+  {
+    time: 21, // 遮罩变黑，耗时0.5秒
+    content: {
+      background: {
+        bgImage: `url(${Image_BG_2})`,
+        xPos: 12,
+      },
+      mask: {
+        bgColor: "rgba(0,0,0)",
+        duration: 0.5,
+      },
+    },
+  },
+  {
+    time: 21.5, // 遮罩透明，同时开启动画2（自带衣柜遮罩）,耗时0.5秒
+    content: {
+      background: {
+        bgImage: `url(${Image_BG_2})`,
         xPos: 12,
         animateType: 2,
       },
       mask: {
-        bgImage: `url(${Imaage_Wardrobe})`,
+        bgColor: "rgba(0,0,0,0)",
+        duration: 0.5,
+      },
+      playArea: true,
+    },
+  },
+  {
+    time: 22, // 开始心跳图，无限耗时
+    content: {
+      background: {
+        bgImage: `url(${Image_BG_2})`,
+        xPos: 12,
+        animateType: 2,
       },
       playArea: true,
     },
